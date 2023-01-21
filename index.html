@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyHamburger</title>
+    <link rel="stylesheet" href="./css/ST.css">
+</head>
+<body>
+    <form name="" action="" id="form">
+        <fieldset class="field">
+            <legend>збери свій гамбургер</legend>
+            <div class="row">
+                <p><center>Розмір гамбургера</center></p><br>
+                <div class="radio-variant">
+                    <input type="radio" class="radio" name="size" id="small" value="small" checked/>
+                    <label class="radio-label" for="small">Маленький</label>
+                </div>
+                <div class="radio-variant">
+                    <input type="radio" class="radio" name="size" id="large" value="large" />
+                    <label class="radio-label" for="large">Великий</label>
+                </div>
+            </div>
+            <div class="row">
+                <p><center>Додатки</center></p>
+                <div class="checkbox-variant">
+                    <input type="checkbox" class="checkbox" name="add" id="cheese" value="cheese"/>
+                    <label class="check-label" for="cheese">Сир</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" class="checkbox" name="add" id="salad" value="salad"/>
+                    <label class="check-label" for="salad">Салат</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" class="checkbox" name="add" id="potato" value="potato"/>
+                    <label class="check-label" for="potato">Картопля фрі</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" class="checkbox" name="add" id="onion" value="onion"/>
+                    <label class="check-label" for="onion">Цибуля</label>
+                </div>
+                <div class="checkbox-variant">
+                    <input type="checkbox" class="checkbox" name="add" id="ketchup" value="ketchup"/>
+                    <label class="check-label" for="ketchup">Кетчуп</label>
+                </div>
+            </div>
+            <div class="submit">
+                <input class="button" type="submit" value="Розрахувати замовлення" />
+            </div>
+        </fieldset>
+        <br />
+        <div class="check" id="result">
+            <div><b>Вартість:</b> <span id="price">0</span> гривень</div>
+            <div><b>Калорійність:</b> <span id="calories">0</span> кКал</div><br>
+            <div><center><b>Смачного! Не забудь зайти у спортзал!</b></center></div>
+        </div>
+    </form>
+
+
+<script src="./js/pricer.js" defer></script>
+</body>
+</html>
